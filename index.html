@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Karma|Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karma|Open+Sans|Playfair+Display:700,900" rel="stylesheet">
 
   <meta charset="utf-8">
   <title>Designing a Typeface for Klokobetz, an Imaginary
@@ -27,35 +27,52 @@ Language</title>
     }
 
     body {
-      font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+      font-size: 1.25em; /* currently ems cause chrome bug misinterpreting rems on body element */
       line-height: 1.6;
       font-weight: 400;
-      margin: 0;
+      margin: .8;
     }
 
     p {
-      margin-top: 1rem;
+      margin-top: 2rem;
       font-family: 'Open Sans', sans-serif;
+      position: relative;
+      margin-left: 20%;
      }
 
     p.first {
       margin-top:0;
     }
 
+    .header {
+      position: relative;
+
+    }
+
+    #lastp {
+      margin-bottom: 15%;
+    }
+
     h4 {
+
       margin-top: 0;
       margin-bottom: 2rem;
-      font-size: 2.4rem;
-      line-height: 1.35;
-      font-family: 'Karma', serif;
+      font-size: 2.5rem;
+      line-height: 1.5;
+      font-family: 'Playfair Display', serif;
       font-weight: 700;
+      letter-spacing: .1rem;
+
     }
 
     h4.title {
-
+      font-size: 900;
+      margin-top: 5rem;
     }
 
     h4.author {
+      font-size: 1.5rem;
+      margin:1rem 0rem 5rem 0rem;
 
     }
 
@@ -74,13 +91,24 @@ Language</title>
       width: 75%;
       margin: auto;
     }
+    .header {
+      right: 0%;
+    }
     p {
-      font-size: 2em;
+      font-size: 1.25em;
     }
     }
 
     /* Larger than phablet (also point when grid becomes active) */
-    @media (min-width: 550px) {}
+    @media (min-width: 550px) {
+      .column {
+        width: 75%;
+        margin: auto;
+      }
+      p {
+        font-size: 1.5em;
+      }
+    }
 
     /* Larger than tablet */
     @media (min-width: 750px) {
@@ -91,7 +119,13 @@ Language</title>
     }
 
     /* Larger than desktop */
-    @media (min-width: 1000px) {}
+    @media (min-width: 1000px) {
+      .column {
+        width: 75%;
+    }
+    p {
+      font-size: 1.75em;
+    }
 
     /* Larger than Desktop HD */
     @media (min-width: 1200px) {
@@ -106,14 +140,16 @@ Language</title>
 
   <div class="wrapper">
     <div class="column">
+      <div class="header">
         <h4 class="title">Designing a Typeface for Klokobetz, an Imaginary
 Language</h4>
         <h4 class="author">Angela Riechers</h4>
+        </div>
         <p class="first">The world's typefaces, sophisticated systems of visual translation, carry the sound of more than 6,900 languages into the written word. But how does a designer invent letterforms for an invented language? Especially one dreamed up by someone else? Lyon-based graphic designer Jérémy Barrault, who enjoys creating typefaces for music-related projects, recently tackled these perplexing issues to develop an original font for Klokobetz, an imaginary language used in performances by French singer Nosfell (whose full stage name, Labyala Fela Da Jawid Fel, means "The one who walks and heals"). Klokobetz is a rich aural compilation, drawing sounds from African, Asian and European languages, and a compelling vehicle for Nosfell's haunting voice. Barrault first became interested in the artist's work, which includes albums, live performance, a comic book and dance pieces, when he attended a concert performance in 2007. After collaborating with Nosfell on a solo tour poster in 2016, the designer convinced him that a unique typeface was needed to express Klokobetz.</p>
         <p>Nosfell says, "My father spoke seven official languages. Klokobetz was number eight, an uncanny tongue he invented and reserved for secret personal conversations with me at night. He moved out when I was 12, and during my teens I began working on a written version of the alphabet. Trying to describe the characters with roman type was never enough-I had to imagine more accents and diphthongs, so I started to draw signs on paper."</p>
         <p>After Nosfell sketched out how the Klokobetz alphabet works, Barrault began translating the drawings into letterforms, plotting them out on a grid and adjusting the shapes for overall coherence as a character set. The resulting letters are calligraphic, bearing a slight resemblance to the written Arabic scripts used by Nosfell's father. They evoke mathematical notation and Hindi scripts as well. "For me, Klokobetz is a poetic expression of an extension of the soul-a phantasmagoria of what could've been before the myth of Babel," Nosfell says. "It is a graphic and musical way to address mankind's questions on language and its origins."</p>
         <p>Barrault says, "At first, I looked at many other scripts for reference, but I quickly realized that the project was different from all other typefaces-Klokobetz is a complete language with its own particular grammar and syntax. The alphabet's logic is specific to Nosfell yet is influenced by all kinds of other writing systems." To visually match the sound of the spoken words, which incorporates special throat techniques, silent letters, and subtle tones, the collaborators opted to develop a sans serif font where a slight tilt of the letterforms creates rhythm and acceleration rather than a serif whose typographic formality might carry too much weight.</p>
-        <p>Besides his father, Nosfell is the world's only fluent Klokobetz speaker. He says, "The project is missing one thing that would make it a real language: being spoken, shared, even mangled by other people." However, some of his fans know a few words and have even deciphered a large part of the writing process by themselves. Good news: This hard-core group has something to look forward to in the near future. Nosfell and Barrault are currently working on an artist's book about the language, to be published later this year, that will include new weights of the typeface along with practical exercises, keys on vocabulary and musical scores.</p>
+        <p id="lastp">Besides his father, Nosfell is the world's only fluent Klokobetz speaker. He says, "The project is missing one thing that would make it a real language: being spoken, shared, even mangled by other people." However, some of his fans know a few words and have even deciphered a large part of the writing process by themselves. Good news: This hard-core group has something to look forward to in the near future. Nosfell and Barrault are currently working on an artist's book about the language, to be published later this year, that will include new weights of the typeface along with practical exercises, keys on vocabulary and musical scores.</p>
     </div>
   </div>
 
